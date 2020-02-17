@@ -258,9 +258,18 @@ namespace LinkedListV
 
         public void RemoveAt(int idx)
         {
-            if (idx >= size)
+            if (idx < 0)
             {
                 ReturnEx();
+            }
+            else if (idx >= size)
+            {
+                ReturnEx();
+            }
+            else if (idx == 0)
+            {
+                size--;
+                Head = Head.Next;
             }
             else
             {
@@ -347,21 +356,23 @@ namespace LinkedListV
                 {
                     currentNode = currentNode.Next;
                 }
-                ValueOfConcreteNode = currentNode.Value; 
+                ValueOfConcreteNode = currentNode.Value;
             }
         }
 
         public void Reverse()
         {
-            Node currentNode = Head;
-            for (int i = 0; i < size/2; i++)
+            if (Head == null)
             {
-                for (int z = 0; z < size - i; z++)
-                {
-                    currentNode = currentNode.Next;
-                }
-                Head = currentNode;
-                currentNode = currentNode.Next;
+                ReturnEx();
+            }
+            Node currentNode = Head;
+            while (currentNode.Next != null)
+            {
+                Node nextNode = currentNode.Next;
+                currentNode.Next = nextNode.Next;
+                nextNode.Next = Head;
+                Head = nextNode;
             }
         }
     }

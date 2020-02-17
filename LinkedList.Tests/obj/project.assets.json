@@ -5287,11 +5287,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Валентина\\Documents\\программирование\\100112\\100112\\10011\\LinkedList\\LinkedList.Tests\\LinkedList.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Валентина\\source\\Новая папка\\didactic-system\\LinkedList.Tests\\LinkedList.Tests.csproj",
       "projectName": "LinkedList.Tests",
-      "projectPath": "C:\\Users\\Валентина\\Documents\\программирование\\100112\\100112\\10011\\LinkedList\\LinkedList.Tests\\LinkedList.Tests.csproj",
+      "projectPath": "C:\\Users\\Валентина\\source\\Новая папка\\didactic-system\\LinkedList.Tests\\LinkedList.Tests.csproj",
       "packagesPath": "C:\\Users\\Валентина\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Валентина\\Documents\\программирование\\100112\\100112\\10011\\LinkedList\\LinkedList.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Валентина\\source\\Новая папка\\didactic-system\\LinkedList.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Валентина\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5307,8 +5307,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Валентина\\Documents\\программирование\\100112\\100112\\10011\\LinkedList\\LinkedList\\LinkedList.csproj": {
-              "projectPath": "C:\\Users\\Валентина\\Documents\\программирование\\100112\\100112\\10011\\LinkedList\\LinkedList\\LinkedList.csproj"
+            "C:\\Users\\Валентина\\source\\Новая папка\\didactic-system\\LinkedList\\LinkedList.csproj": {
+              "projectPath": "C:\\Users\\Валентина\\source\\Новая папка\\didactic-system\\LinkedList\\LinkedList.csproj"
             }
           }
         }

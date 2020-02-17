@@ -5,7 +5,6 @@ using System.Linq;
 
 namespace LinkedListV.Tests
 {
-    //изначально head null, size 0
     [TestFixture]
     public class LinkedListTests
     {
@@ -201,6 +200,8 @@ namespace LinkedListV.Tests
         }
 
         [TestCase(new int[] { 0, 1, 2, 3 }, 4, -1)]
+        [TestCase(new int[] { 0, 1, 2, 3 }, -1, -1)]
+        [TestCase(new int[] { 0, 1, 2, 3 }, 10, -1)]
         public void RemoveAt_WithInCorrectIndex(int[] enterArr, int idx, int exp)
         {
             LinkedList list = new LinkedList(enterArr);
@@ -209,6 +210,7 @@ namespace LinkedListV.Tests
             Assert.AreEqual(exp, act);
         }
 
+        [TestCase(new int[] { 0, 1, 2, 3 }, 0, new int[] { 1, 2, 3 })]
         [TestCase(new int[] { 0, 1, 2, 3 }, 2, new int[] { 0, 1, 3 })]
         [TestCase(new int[] { 0, 1, 2, 3 }, 3, new int[] { 0, 1, 2 })]
         public void RemoveAt_WithCorrectIndex(int[] enterArr, int idx, int[] expArr)
@@ -328,6 +330,14 @@ namespace LinkedListV.Tests
             list.Reverse();
             int[] actualArr = list.ToArray();
             Assert.AreEqual(expectedArr, actualArr);
+        }
+
+        public void Reverse_WithEmptyList(int expected = -1)
+        {
+            LinkedList list = new LinkedList();
+            list.Reverse();
+            int actual = list.Ex;
+            Assert.AreEqual(expected, actual);
         }
     }
 }
