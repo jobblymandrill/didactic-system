@@ -1,0 +1,22 @@
+C:\Users\Валентина\source\repos\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.exe
+C:\Users\Валентина\source\repos\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.deps.json
+C:\Users\Валентина\source\repos\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.runtimeconfig.json
+C:\Users\Валентина\source\repos\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.runtimeconfig.dev.json
+C:\Users\Валентина\source\repos\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.dll
+C:\Users\Валентина\source\repos\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.pdb
+C:\Users\Валентина\source\repos\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.csprojAssemblyReference.cache
+C:\Users\Валентина\source\repos\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.AssemblyInfoInputs.cache
+C:\Users\Валентина\source\repos\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.AssemblyInfo.cs
+C:\Users\Валентина\source\repos\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.dll
+C:\Users\Валентина\source\repos\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.pdb
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.exe
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.deps.json
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.runtimeconfig.json
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.runtimeconfig.dev.json
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.dll
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\bin\Debug\netcoreapp3.1\Structures.pdb
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.csprojAssemblyReference.cache
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.AssemblyInfoInputs.cache
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.AssemblyInfo.cs
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.dll
+C:\Users\Валентина\source\Новая папка\didactic-system\Structures\Structures\obj\Debug\netcoreapp3.1\Structures.pdb
