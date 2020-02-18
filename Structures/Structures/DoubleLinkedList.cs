@@ -30,14 +30,14 @@ namespace Structures
             {
                 Head = new Node(sourceArray[0]);
                 size++;
-                Tail = new Node(sourceArray[sourceArray.Length - 1]);
                 Node currentNode = Head;
-                for (int i = 1; i < sourceArray.Length - 1; i++)
+                for (int i = 1; i < sourceArray.Length; i++)
                 {
                     currentNode.Next = new Node(sourceArray[i]);
                     size++;
                     currentNode = currentNode.Next;
                 }
+                Tail = new Node(sourceArray[sourceArray.Length - 1]);
             }
         }
         public int[] ToArray()

@@ -8,6 +8,8 @@ namespace Structures.Tests
     [TestFixture]
     class DoubleLinkedListTests
     {
+        [TestCase(new int[] { 1}, new int[] { 1})]
+        [TestCase(new int[] { 1, 2 }, new int[] { 1, 2 })]
         [TestCase(new int[] { 1, 2, 3, 4, 5, 6}, new int[] { 1, 2, 3, 4, 5, 6})]
         public void ToArrayTestWithNotEmptyList(int [] array, int [] eArray)
         {
