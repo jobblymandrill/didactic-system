@@ -25,19 +25,37 @@ namespace Structures
         public DoubleLinkedList(int[] sourceArray)
         {
             if (sourceArray.Length == 0)
-            { }
+            { return; }
             else
             {
                 Head = new Node(sourceArray[0]);
                 size++;
                 Node currentNode = Head;
+                Tail = Head;
                 for (int i = 1; i < sourceArray.Length; i++)
                 {
                     currentNode.Next = new Node(sourceArray[i]);
-                    size++;
+                    if (size == 1)
+                    {
+                        currentNode.Prev = null;
+                        Tail = currentNode;
+                    }
+                    else
+                    {
+                        currentNode.Prev = new Node(sourceArray[i - 2]);
+                        Tail = currentNode;
+                    }
+                    if (i == sourceArray.Length - 1)
+                    {
+                        Tail = currentNode.Next;
+                        Tail.Next = null;
+                        Tail.Prev = currentNode;
+                    }
                     currentNode = currentNode.Next;
+                    Tail = currentNode;
+                    size++;
                 }
-                Tail = new Node(sourceArray[sourceArray.Length - 1]);
+
             }
         }
         public int[] ToArray()
@@ -55,15 +73,21 @@ namespace Structures
         }
         public void AddFirst(int val)
         {
-            size++;
             Node node = new Node(val);
-            Node temp = Head;
-            node.Next = temp;
-            Head = node;
-            if (size == 0)
-                Tail = Head;
+            if (Head == null && Tail == null)
+            {
+                Head = node;
+                Tail = node;
+                size++;
+            }
             else
-                temp.Prev = node;
+            {
+                node.Prev = null;
+                Head.Prev = node;
+                node.Next = Head;
+                Head = node;
+                size++;
+            }
         }
         public void AddFirst(int[] val)
         {
@@ -79,6 +103,7 @@ namespace Structures
         public void AddLast(int val)
         {
             Node node = new Node(val);
+
             if (Head == null)
             {
                 Head = node;
@@ -214,6 +239,11 @@ namespace Structures
             {
                 ReturnEx();
             }
+            else if (idx == 0)
+            {
+                size--;
+                Head = Head.Next;
+            }
             else
             {
                 Node currentNode = Head;
@@ -241,9 +271,10 @@ namespace Structures
         }
         public void IndexOf(int val)
         {
+            Index = -1;
             if (Head == null)
             {
-                ReturnEx();
+                return;
             }
             else
             {
