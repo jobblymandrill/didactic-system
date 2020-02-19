@@ -38,17 +38,14 @@ namespace Structures
                     if (size == 1)
                     {
                         currentNode.Prev = null;
-                        Tail = currentNode;
                     }
                     else
                     {
                         currentNode.Prev = new Node(sourceArray[i - 2]);
-                        Tail = currentNode;
                     }
                     if (i == sourceArray.Length - 1)
                     {
                         Tail = currentNode.Next;
-                        Tail.Next = null;
                         Tail.Prev = currentNode;
                     }
                     currentNode = currentNode.Next;
