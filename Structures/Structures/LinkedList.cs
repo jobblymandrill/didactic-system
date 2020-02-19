@@ -21,7 +21,6 @@ namespace Structures
         Node Head { get; set; }
         public LinkedList()
         { }
-
         public LinkedList(int[] sourceArray)
         {
             if (sourceArray.Length == 0)
@@ -41,7 +40,6 @@ namespace Structures
                 }
             }
         }
-
         public int[] ToArray()
         {
             if (size == 0)
@@ -60,7 +58,6 @@ namespace Structures
                 return listArray;
             }
         }
-
         public void AddFirst(int val)
         {
             Node node = new Node(val);
@@ -75,7 +72,6 @@ namespace Structures
             }
             size++;
         }
-
         public void AddFirst(int[] val)
         {
             if (Head == null)
@@ -102,12 +98,10 @@ namespace Structures
                 }
             }
         }
-
         public int GetSize()
         {
             return this.size;
         }
-
         public void AddLast(int val)
         {
             if (Head == null)
@@ -127,7 +121,6 @@ namespace Structures
             }
             size++;
         }
-
         public void AddLast(int[] val)
         {
             if (size == 0)
@@ -162,7 +155,6 @@ namespace Structures
                 }
             }
         }
-
         public void AddAt(int idx, int val)
         {
             if (idx >= size)
@@ -182,7 +174,6 @@ namespace Structures
                 size++;
             }
         }
-
         public void AddAt(int idx, int[] val)
         {
             if (idx > size)
@@ -205,7 +196,6 @@ namespace Structures
                 }
             }
         }
-
         public void Set(int idx, int val)
         {
             if (idx > size)
@@ -224,7 +214,6 @@ namespace Structures
                 currentNode.Value = node.Value;
             }
         }
-
         public void RemoveFirst()
         {
             if (Head == null)
@@ -237,7 +226,6 @@ namespace Structures
                 Head = Head.Next;
             }
         }
-
         public void RemoveLast()
         {
             if (Head == null)
@@ -255,7 +243,6 @@ namespace Structures
                 size--;
             }
         }
-
         public void RemoveAt(int idx)
         {
             if (idx < 0)
@@ -282,7 +269,6 @@ namespace Structures
                 size--;
             }
         }
-
         public void Contains(int val)
         {
             Node currentNode = Head;
@@ -296,7 +282,6 @@ namespace Structures
             }
             if (Contain != true) { Contain = false; }
         }
-
         public void IndexOf(int val)
         {
             Node currentNode = Head;
@@ -313,7 +298,6 @@ namespace Structures
                 currentNode = currentNode.Next;
             }
         }
-
         public void GetFirst()
         {
             if (Head != null)
@@ -325,7 +309,6 @@ namespace Structures
                 ReturnEx();
             }
         }
-
         public void GetLast()
         {
             if (Head == null)
@@ -342,10 +325,9 @@ namespace Structures
                 ValueOfLastNode = currentNode.Value;
             }
         }
-
         public void Get(int idx)
         {
-            if (idx >= size)
+            if (idx >= size || idx < 0)
             {
                 ReturnEx();
             }
@@ -359,7 +341,6 @@ namespace Structures
                 ValueOfConcreteNode = currentNode.Value;
             }
         }
-
         public void Reverse()
         {
             if (Head == null)
